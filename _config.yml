@@ -1,0 +1,89 @@
+# Site configuration
+
+title: Festival GongFuCha
+tagline: les 30 septembre, 1er et 2 octobre 2022 au parc aux bambous à Lapenne (09)
+description: Trois journées pour faire le plein d'inspiration et rencontrer la culture Chinoise du Thé.
+logo: /assets/images/twittercard.png
+url: https://gongfucha.brutdethé.fr
+repository: brutdethe/festival-gongfucha
+destination: _site
+locale: fr_FR
+logo: 
+lazyload:
+  placeholder: "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+
+# Est-ce qu'on vend des places à tarif plein, est-ce qu'on propose une liste d'attente ou les deux ?
+tickets:
+  selling: true
+  waiting-list: false
+
+# Compression du code HTML en production
+compress_html:
+  ignore:
+    envs:
+      - 'development'
+
+## SEO
+
+robots: index,follow
+
+# Services configuration
+
+weezevent:
+    mini-site-url: https://www.weezevent.com/
+
+newsletter:
+  url: https://xn--brutdeth-i1a.us13.list-manage.com/subscribe/post?u=be5121dbaede051661a4c802c&amp;id=db43bcc38d&amp;f_id=002e8ce2f0
+
+# Jekyll configuration
+
+timezone: Europe/Paris
+sass:
+    sass_dir: _sass
+    style: compressed
+
+collections:
+  talks:
+    output: false
+    order: date asc
+    permalink: /talks/:path/
+    sitemap: false
+
+defaults:
+  -
+    scope:
+      path: "pages"
+      type: pages
+    values:
+      locale: fr_FR
+      layout: default
+
+microtypo:
+  median: true
+
+include:
+  - _headers
+
+exclude:
+  - .editorconfig
+  - .gitattributes
+  - .gitignore
+  - .ruby-version
+  - .travis.yml
+  - autoprefixer.yml
+  - Gemfile
+  - Gemfile.lock
+  - Procfile
+  - script
+  - vendor
+  - gems
+  - tmp
+  - LICENSE
+  - README.md
+  - notes-integration.md
+  - script
+  - "Rakefile"
+  - "gulpfile.js"
+  - "node_modules"
+  - "package.json"
+  - "package-lock.json"
