@@ -6,7 +6,9 @@ description: Trois journées pour faire le plein d'inspiration et rencontrer la 
 logo: /assets/images/twittercard.png
 url: https://gongfucha.brutdethé.fr
 repository: brutdethe/festival-gongfucha
-destination: _site
+repository: brutdethe/festival-2k22
+baseurl: /2022
+destination: _site/2022
 locale: fr_FR
 logo: 
 lazyload:
